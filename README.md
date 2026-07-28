@@ -1,10 +1,12 @@
 <div align="center">
 
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=28&duration=3000&pause=1200&color=1DB954&center=true&vCenter=true&width=600&lines=El+talento+no+tiene+c%C3%B3digo+postal" alt="Typing SVG" />
+
 # FinOps & Cloud Engineer | I cut cloud costs and automate cloud governance
 
 ### AWS · GCP · Azure | Founder @NodoBravo — cloud & AI training
 
-![Profile Views](https://komarev.com/ghpvc/?username=alexisotogon-cyber&color=0d9488&style=flat-square&label=Visitas+al+perfil)
+![Profile Views](https://komarev.com/ghpvc/?username=alexisotogon-cyber&color=1DB954&style=flat-square&label=Visitas+al+perfil)
 
 </div>
 
@@ -51,14 +53,29 @@ con dos frentes:
 
 ### 🛠️ Stack
 
+**☁️ Cloud & DevOps**
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=aws,gcp,azure&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=aws,gcp,azure,terraform,kubernetes,docker&theme=dark" />
 </p>
+
+**💻 Lenguajes**
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=terraform,kubernetes,docker&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=java,php,py,ts&theme=dark" />
 </p>
+
+**🖥️ Frameworks**
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,linux&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=spring,laravel&theme=dark" />
+</p>
+
+**🗄️ Bases de datos**
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase&theme=dark" />
+</p>
+
+**⚙️ Otras herramientas**
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=git,github,gitlab,vscode,vim,linux&theme=dark" />
 </p>
 
 **Metodologías:** SAFe
@@ -73,7 +90,7 @@ con dos frentes:
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/NodoBravo/)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/nodobravo)
 
-[![Sitio personal](https://img.shields.io/badge/Alexis%20Soto-0d9488?style=for-the-badge&logo=googlechrome&logoColor=white)](https://alexissoto.nodobravo.mx/)
+[![Sitio personal](https://img.shields.io/badge/Alexis%20Soto-1DB954?style=for-the-badge&logo=googlechrome&logoColor=white)](https://alexissoto.nodobravo.mx/)
 [![NodoBravo](https://img.shields.io/badge/NodoBravo-181717?style=for-the-badge&logo=googlechrome&logoColor=white)](https://nodobravo.mx/)
 
 </div>
