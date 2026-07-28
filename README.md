@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&duration=2800&pause=1000&color=1DB954,FFFFFF,1DB954&center=true&vCenter=true&multiline=true&width=650&height=60&separator=%3B&lines=El+talento+no+tiene+c%C3%B3digo+postal" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&duration=2800&pause=1000&color=1DB954&center=true&vCenter=true&width=650&lines=El+talento+no+tiene+c%C3%B3digo+postal" alt="Typing SVG" />
 
 # FinOps & Cloud Engineer | I cut cloud costs and automate cloud governance
 
@@ -9,6 +9,7 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=alexisotogon-cyber&color=1DB954&style=flat-square&label=Visitas+al+perfil)
 
 </div>
+
 ---
 
 ### 🧭 Sobre mí
@@ -54,12 +55,12 @@ con dos frentes:
 
 **☁️ Cloud & DevOps**
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=aws,gcp,azure,terraform,kubernetes,docker&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=aws,gcp,azure,terraform,kubernetes,docker,linux&theme=dark" />
 </p>
 
 **💻 Lenguajes**
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=java,php,py,ts&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=java,php,py,ts,html,css&theme=dark" />
 </p>
 
 **🖥️ Frameworks**
@@ -74,15 +75,33 @@ con dos frentes:
 
 **⚙️ Otras herramientas**
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,gitlab,vscode,vim,linux&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=git,github,gitlab,vscode,vim&theme=dark" />
 </p>
 
+**Metodologías y frameworks propios**
+
+![SAFe](https://img.shields.io/badge/SAFe-181717?style=for-the-badge)
 ![ITIL](https://img.shields.io/badge/ITIL-004B87?style=for-the-badge)
 ![FinOps](https://img.shields.io/badge/FinOps-1DB954?style=for-the-badge)
 ![FOCUS](https://img.shields.io/badge/FOCUS-181717?style=for-the-badge)
 
-**Metodologías:** SAFe
-**Servicios AWS:** EC2 · S3 · Lambda · CloudFormation · SageMaker · Bedrock
+**AWS**
+
+![EC2](https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
+![S3](https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
+![CloudFormation](https://img.shields.io/badge/CloudFormation-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SageMaker](https://img.shields.io/badge/SageMaker-01A88D?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Bedrock](https://img.shields.io/badge/Bedrock-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+
+**Automatización e IA**
+
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=claude&logoColor=white)
+
+**Sistemas operativos**
+
+![Windows Server](https://img.shields.io/badge/Windows%20Server-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 ---
 
