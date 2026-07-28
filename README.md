@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=28&duration=3000&pause=1200&color=1DB954&center=true&vCenter=true&width=600&lines=El+talento+no+tiene+c%C3%B3digo+postal" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&duration=2800&pause=1000&color=1DB954,FFFFFF,1DB954&center=true&vCenter=true&multiline=true&width=650&height=60&separator=%3B&lines=El+talento+no+tiene+c%C3%B3digo+postal" alt="Typing SVG" />
 
 # FinOps & Cloud Engineer | I cut cloud costs and automate cloud governance
 
@@ -9,7 +9,6 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=alexisotogon-cyber&color=1DB954&style=flat-square&label=Visitas+al+perfil)
 
 </div>
-
 ---
 
 ### 🧭 Sobre mí
@@ -77,6 +76,10 @@ con dos frentes:
 <p align="left">
   <img src="https://skillicons.dev/icons?i=git,github,gitlab,vscode,vim,linux&theme=dark" />
 </p>
+
+![ITIL](https://img.shields.io/badge/ITIL-004B87?style=for-the-badge)
+![FinOps](https://img.shields.io/badge/FinOps-1DB954?style=for-the-badge)
+![FOCUS](https://img.shields.io/badge/FOCUS-181717?style=for-the-badge)
 
 **Metodologías:** SAFe
 **Servicios AWS:** EC2 · S3 · Lambda · CloudFormation · SageMaker · Bedrock
