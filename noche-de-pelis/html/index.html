@@ -4,121 +4,62 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Noche de Pelis</title>
-<meta name="description" content="Tú pones las pelis, la suerte pone la función. Busca tus películas, marca tus plataformas y tu horario, y arma tu noche.">
+<meta name="description" content="Elige pelis de tus plataformas, fija las imperdibles y deja que la suerte arme tu función de terror.">
 <meta property="og:title" content="Noche de Pelis">
-<meta property="og:description" content="Tú pones las pelis, la suerte pone la función.">
+<meta property="og:description" content="Elige pelis de tus plataformas, fija las imperdibles y deja que la suerte arme tu función.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#08090b">
+<meta name="theme-color" content="#0b0b0b">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://image.tmdb.org">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
 
+<!-- BARRA SUPERIOR -->
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="Noche de Pelis, inicio">Noche de Pelis</a>
+  <div class="nav-right">
+    <div class="nav-search" id="navSearch">
+      <button class="icon-btn" type="button" id="searchToggle" aria-label="Buscar película">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" id="q" placeholder="Títulos, sagas…" autocomplete="off" maxlength="80" aria-label="Buscar película">
+    </div>
+    <button class="plat-btn" type="button" id="platBtn" aria-label="Cambiar mis plataformas">
+      <span class="plat-logos" id="platLogos"></span><span class="plat-txt">Mis plataformas</span>
+    </button>
+  </div>
+</header>
+
 <!-- PORTADA -->
-<header class="hero" id="top">
+<section class="hero" id="top" aria-label="Película destacada">
   <div class="hero-bg" id="heroBg" aria-hidden="true"></div>
-  <div class="hero-shade" aria-hidden="true"></div>
-  <nav class="topbar">
-    <span class="brand">Noche de Pelis</span>
-    <a class="ticket-btn" href="#acto-1">Taquilla</a>
-  </nav>
-  <div class="hero-in">
+  <div class="fog" aria-hidden="true"><i></i><i></i></div>
+  <svg class="web web-l" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M0 0L200 200M0 0L120 200M0 0L200 120M0 0L60 200M0 0L200 60"/><path d="M0 40Q30 32 40 0M0 80Q60 64 80 0M0 125Q95 100 125 0M0 170Q130 136 170 0"/></g></svg>
+  <div class="hero-in" id="heroIn">
     <div class="credits" id="credits">
       <figure class="credit-photo"><img src="img/foto-1.jpg" alt="Foto 1 del proyecto" width="120" height="160"></figure>
       <figure class="credit-photo"><img src="img/foto-2.jpg" alt="Foto 2 del proyecto" width="120" height="160"></figure>
       <span class="credit-txt">presentan</span>
     </div>
-    <h1 class="hero-title">Noche<br>de Pelis</h1>
-    <p class="hero-quote">“Tú pones las pelis. La suerte pone la función.”</p>
-    <p class="hero-meta"><span>De 2 a 20 películas</span><span>Tus plataformas</span><span>Tu horario</span></p>
-    <a class="cta" href="#acto-1">Elegir mis pelis</a>
+    <p class="eyebrow">Destacada para esta noche</p>
+    <h1 class="hero-title" id="heroTitle">Noche de Pelis</h1>
+    <p class="hero-meta" id="heroMeta"></p>
+    <p class="hero-ov" id="heroOv">Elige pelis de tus plataformas, fija las que no te puedes perder y deja que la suerte arme el resto de la función.</p>
+    <div class="hero-actions" id="heroActions"></div>
   </div>
-  <p class="now-showing" id="nowShowing" hidden></p>
-</header>
+</section>
 
-<main>
-  <!-- ACTO I -->
-  <section class="act" id="acto-1" aria-labelledby="h1a">
-    <div class="act-head">
-      <span class="act-no">Acto I</span>
-      <h2 id="h1a">Elige tus pelis</h2>
-      <p class="act-sub">Busca por nombre y abre la ficha para entrar a la peli. Mínimo 2, máximo 20.</p>
-    </div>
-    <div class="search" id="search">
-      <span class="search-ic" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </span>
-      <input type="search" id="q" placeholder="Busca una película…" autocomplete="off" maxlength="80"
-             role="combobox" aria-expanded="false" aria-controls="results" aria-autocomplete="list" aria-label="Buscar película">
-      <ul class="results" id="results" role="listbox" hidden></ul>
-    </div>
-    <div class="rail-head">
-      <p class="tally"><b id="count">00</b><span>/ 20 en tu cartelera</span></p>
-      <button class="link-btn" type="button" id="clearBtn">Vaciar lista</button>
-    </div>
-    <div class="posters" id="list"></div>
-  </section>
-
-  <!-- ACTO II -->
-  <section class="act" id="acto-2" aria-labelledby="h2a">
-    <div class="act-head">
-      <span class="act-no">Acto II</span>
-      <h2 id="h2a">Dónde y cuándo</h2>
-    </div>
-    <div class="split">
-      <div class="panel">
-        <div class="panel-row">
-          <h3>Tus plataformas</h3>
-          <label class="country"><span class="sr">País</span>
-            <select id="country">
-              <option value="MX">México</option><option value="AR">Argentina</option><option value="CL">Chile</option>
-              <option value="CO">Colombia</option><option value="PE">Perú</option><option value="ES">España</option>
-              <option value="US">Estados Unidos</option>
-            </select>
-          </label>
-        </div>
-        <p class="note">Marca las que ya tienes contratadas.</p>
-        <div class="chips" id="platChips" role="group" aria-label="Plataformas"></div>
-        <button class="link-btn" type="button" id="morePlats" hidden>Ver todas</button>
-        <h3 class="mt">¿Pagarías extra?</h3>
-        <div class="seg" role="group" aria-label="Costo extra">
-          <button type="button" id="freeBtn" aria-pressed="true">Solo incluidas<small>Nada aparte de tu suscripción</small></button>
-          <button type="button" id="paidBtn" aria-pressed="false">También renta o compra<small>Puede costar extra</small></button>
-        </div>
-      </div>
-
-      <div class="panel stub">
-        <h3>Horario de la función</h3>
-        <p class="note">Solo decide cuántas pelis caben, no cuáles.</p>
-        <div class="times-in">
-          <label class="tin"><span>Empieza</span><input type="time" id="start" value="19:30"></label>
-          <span class="arrow" aria-hidden="true">→</span>
-          <label class="tin"><span>Termina</span><input type="time" id="end" value="01:00"></label>
-        </div>
-        <label class="brk"><span>Intermedio entre pelis</span>
-          <select id="breakMin"><option value="0">Sin pausa</option><option value="10" selected>10 min</option><option value="15">15 min</option><option value="20">20 min</option><option value="30">30 min</option></select>
-        </label>
-        <p class="window" id="windowTxt"></p>
-        <div class="perf" aria-hidden="true"></div>
-        <p class="admit">Admite · Toda la sala</p>
-      </div>
-    </div>
-    <button class="go" type="button" id="goBtn">Que empiece la función</button>
-    <p class="status" id="status" role="status"></p>
-  </section>
-
-  <!-- ACTO III -->
-  <section class="act" id="acto-3" aria-labelledby="h3a" hidden>
-    <div class="act-head">
-      <span class="act-no">Acto III</span>
-      <h2 id="h3a">Tu función de hoy</h2>
-    </div>
-    <div id="result"></div>
+<!-- FILAS / RESULTADOS -->
+<main id="main">
+  <div id="rows" class="rows"></div>
+  <section id="searchView" class="search-view" hidden aria-live="polite">
+    <h2 class="row-title" id="searchTitle">Resultados</h2>
+    <div class="grid" id="searchGrid"></div>
   </section>
 </main>
 
@@ -126,22 +67,102 @@
   <p>Este producto usa la API de TMDB, pero no está respaldado ni certificado por TMDB. Datos de plataformas por JustWatch. El catálogo cambia seguido; confirma en la app antes de dar play.</p>
 </footer>
 
-<!-- FICHA INMERSIVA -->
+<!-- BANDEJA "MI NOCHE" -->
+<div class="tray" id="tray" hidden>
+  <div class="tray-in">
+    <div class="tray-posters" id="trayPosters" aria-hidden="true"></div>
+    <p class="tray-txt" id="trayTxt"></p>
+    <button class="btn red" type="button" id="trayOpen">Mi noche</button>
+  </div>
+</div>
+
+<!-- PANEL "MI NOCHE" -->
+<div class="sheet" id="panel" role="dialog" aria-modal="true" aria-labelledby="panelTitle" hidden>
+  <div class="sheet-back" data-close="panel"></div>
+  <div class="sheet-card">
+    <svg class="web web-r" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M200 0L0 200M200 0L80 200M200 0L0 120M200 0L140 200M200 0L0 60"/><path d="M200 40Q170 32 160 0M200 80Q140 64 120 0M200 125Q105 100 75 0"/></g></svg>
+    <div class="sheet-head">
+      <h2 id="panelTitle">Mi noche</h2>
+      <button class="icon-btn" type="button" data-close="panel" aria-label="Cerrar">✕</button>
+    </div>
+    <p class="sheet-sub">Fija con el candado las que sí o sí quieres ver. El azar llena el resto del tiempo.</p>
+    <ul class="night" id="nightList"></ul>
+    <div class="when">
+      <h3>Horario</h3>
+      <div class="when-row">
+        <label class="tin"><span>Empieza</span><input type="time" id="start" value="19:30"></label>
+        <label class="tin"><span>Termina</span><input type="time" id="end" value="01:00"></label>
+        <label class="tin"><span>Intermedio</span>
+          <select id="breakMin"><option value="0">Sin pausa</option><option value="10" selected>10 min</option><option value="15">15 min</option><option value="20">20 min</option><option value="30">30 min</option></select>
+        </label>
+      </div>
+      <div class="timeline" id="timeline" aria-hidden="true"></div>
+      <p class="fit" id="fitTxt"></p>
+    </div>
+    <button class="btn red big" type="button" id="goBtn">
+      <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M3 1.5v13l11-6.5z" fill="currentColor"/></svg>
+      Armar mi función
+    </button>
+    <p class="status" id="status" role="status"></p>
+  </div>
+</div>
+
+<!-- ELEGIR PLATAFORMAS -->
+<div class="onboard" id="onboard" role="dialog" aria-modal="true" aria-labelledby="obTitle" hidden>
+  <div class="fog" aria-hidden="true"><i></i><i></i></div>
+  <div class="ob-in">
+    <span class="logo">Noche de Pelis</span>
+    <h2 id="obTitle">¿Qué plataformas tienes?</h2>
+    <p class="ob-sub">Así solo te mostramos pelis que de verdad puedes ver.</p>
+    <label class="ob-country"><span>País</span>
+      <select id="country">
+        <option value="MX">México</option><option value="AR">Argentina</option><option value="CL">Chile</option>
+        <option value="CO">Colombia</option><option value="PE">Perú</option><option value="ES">España</option>
+        <option value="US">Estados Unidos</option>
+      </select>
+    </label>
+    <div class="ob-grid" id="obGrid" role="group" aria-label="Plataformas"></div>
+    <button class="link-btn" type="button" id="obMore" hidden>Ver todas</button>
+    <div class="ob-pay">
+      <span>¿Pagarías extra por rentar?</span>
+      <div class="seg" role="group" aria-label="Pagar extra">
+        <button type="button" id="freeBtn" aria-pressed="true">No, solo lo incluido</button>
+        <button type="button" id="paidBtn" aria-pressed="false">Sí, también renta</button>
+      </div>
+    </div>
+    <button class="btn red big" type="button" id="obDone" disabled>Listo</button>
+  </div>
+</div>
+
+<!-- TU FUNCIÓN -->
+<div class="show" id="show" role="dialog" aria-modal="true" aria-labelledby="showTitle" hidden>
+  <div class="show-in">
+    <div class="show-head">
+      <span class="logo">Noche de Pelis</span>
+      <button class="icon-btn" type="button" data-close="show" aria-label="Volver al inicio">✕</button>
+    </div>
+    <p class="eyebrow">Tu función de hoy</p>
+    <h2 class="show-title" id="showTitle">Cartelera</h2>
+    <div id="result"></div>
+  </div>
+</div>
+
+<!-- FICHA -->
 <div class="fx" id="fx" role="dialog" aria-modal="true" aria-labelledby="fxTitle" hidden>
   <div class="fx-bg" id="fxBg" aria-hidden="true"></div>
   <div class="fx-shade" aria-hidden="true"></div>
   <div class="bar top" aria-hidden="true"></div>
   <div class="bar bot" aria-hidden="true"></div>
   <button class="fx-close" type="button" id="fxClose" aria-label="Cerrar ficha">✕</button>
-  <div class="fx-scroll" id="fxScroll">
-    <div class="fx-in" id="fxIn"></div>
-  </div>
+  <div class="fx-scroll" id="fxScroll"><div class="fx-in" id="fxIn"></div></div>
 </div>
 
 <!-- CUENTA REGRESIVA -->
 <div class="leader" id="leader" hidden aria-hidden="true">
   <div class="leader-ring"><span class="sweep"></span><b id="leaderNo">3</b></div>
 </div>
+
+<div class="toast" id="toast" role="status" hidden></div>
 
 <script src="js/app.js" defer></script>
 </body>

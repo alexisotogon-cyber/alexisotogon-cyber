@@ -35,7 +35,8 @@ server {
     #   /api/search/movie            búsqueda por nombre
     #   /api/movie/<id>              detalle (duración, plataformas con append_to_response)
     #   /api/watch/providers/movie   catálogo de plataformas por país
-    location ~ ^/api/(search/movie|movie/[0-9]+|watch/providers/movie)$ {
+    #   /api/discover/movie          filas filtradas por tus plataformas y género
+    location ~ ^/api/(search/movie|movie/[0-9]+|watch/providers/movie|discover/movie)$ {
         limit_except GET { deny all; }
         limit_req zone=api burst=30 nodelay;
 

@@ -1,6 +1,8 @@
 # Noche de Pelis
 
-Buscas tus películas por nombre, abres su ficha a pantalla completa (fondo, sinopsis, reparto, tráiler, dónde verla y pelis parecidas), marcas tus plataformas y tu horario, y la app sortea cuáles caben en la noche.
+Eliges tus plataformas una vez, exploras filas de terror y suspenso que sí puedes ver, agregas pelis a "Mi noche", fijas con candado las imperdibles y la app sortea el resto según tu horario.
+
+Flujo: plataformas, luego inicio con filas, luego Mi noche (candados y horario), luego Tu función (capítulos, compartir y volver a sortear).
 
 Los datos vienen de TMDB; las plataformas por país, de JustWatch a través de TMDB. El token de TMDB vive en el servidor y nunca llega al navegador.
 
@@ -58,6 +60,7 @@ Ruta en el tunnel: servicio `http://noche-de-pelis:80`.
 
 ## Notas
 
-- Solo pasan tres rutas de lectura a TMDB: `search/movie`, `movie/<id>` y `watch/providers/movie`. Las respuestas se guardan 6 h en caché.
+- Solo pasan cuatro rutas de lectura a TMDB: `search/movie`, `discover/movie`, `movie/<id>` y `watch/providers/movie`. Las respuestas se guardan 6 h en caché.
 - Si faltan las fotos de `html/img/`, el crédito "presentan" se oculta solo.
+- Fuentes: Bebas Neue y Poppins (Google Fonts). Netflix Sans es propietaria y no se usa.
 - TMDB pide mostrar el aviso de atribución que está en el pie de página.

@@ -2,7 +2,7 @@
 // Hace lo mismo que nginx/templates/default.conf.template, para cuando el sitio vive en Cloudflare Pages.
 // Requiere la variable secreta TMDB_TOKEN en Pages > Settings > Variables and Secrets.
 
-const ALLOWED = /^(search\/movie|movie\/\d+|watch\/providers\/movie)$/;
+const ALLOWED = /^(search\/movie|movie\/\d+|watch\/providers\/movie|discover\/movie)$/;
 
 export async function onRequestGet({ request, params, env, waitUntil }) {
   const path = (Array.isArray(params.path) ? params.path : [params.path]).join("/");
