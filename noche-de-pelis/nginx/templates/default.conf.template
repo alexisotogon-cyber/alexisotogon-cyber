@@ -1,0 +1,67 @@
+# La imagen oficial de nginx sustituye ${TMDB_TOKEN} al arrancar (envsubst).
+# Las variables propias de nginx ($uri, $args...) no se tocan.
+
+proxy_cache_path /var/cache/nginx/tmdb levels=1:2 keys_zone=tmdb:10m max_size=200m inactive=24h use_temp_path=off;
+limit_req_zone $binary_remote_addr zone=api:10m rate=8r/s;
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name _;
+
+    root /usr/share/nginx/html;
+    index index.html;
+
+    # DNS interno de Docker, necesario porque proxy_pass usa variables
+    resolver 127.0.0.11 valid=300s ipv6=off;
+
+    add_header X-Content-Type-Options nosniff always;
+    add_header Referrer-Policy strict-origin-when-cross-origin always;
+    add_header Content-Security-Policy "default-src 'self'; img-src 'self' data: https://image.tmdb.org; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; frame-ancestors 'none'" always;
+
+    gzip on;
+    gzip_types text/css application/javascript application/json image/svg+xml;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~* \.(css|js|svg)$ {
+        expires 1h;
+        add_header Cache-Control "public";
+    }
+
+    # Proxy de solo lectura a TMDB. Solo estas rutas pasan:
+    #   /api/search/movie            búsqueda por nombre
+    #   /api/movie/<id>              detalle (duración, plataformas con append_to_response)
+    #   /api/watch/providers/movie   catálogo de plataformas por país
+    location ~ ^/api/(search/movie|movie/[0-9]+|watch/providers/movie)$ {
+        limit_except GET { deny all; }
+        limit_req zone=api burst=30 nodelay;
+
+        proxy_pass https://api.themoviedb.org/3/$1$is_args$args;
+        proxy_http_version 1.1;
+        proxy_ssl_server_name on;
+        proxy_ssl_name api.themoviedb.org;
+        proxy_set_header Host api.themoviedb.org;
+        proxy_set_header Authorization "Bearer ${TMDB_TOKEN}";
+        proxy_set_header Accept application/json;
+        proxy_set_header Cookie "";
+        proxy_set_header X-Forwarded-For "";
+        proxy_set_header X-Real-IP "";
+        proxy_hide_header Set-Cookie;
+
+        # Caché local: ahorra llamadas a TMDB y datos del Starlink
+        proxy_cache tmdb;
+        proxy_cache_key $1$is_args$args;
+        proxy_ignore_headers Cache-Control Expires Set-Cookie Vary;
+        proxy_cache_valid 200 6h;
+        proxy_cache_valid 404 10m;
+        proxy_cache_use_stale error timeout updating;
+        add_header X-Cache $upstream_cache_status always;
+    }
+
+    location /api/ {
+        return 404;
+    }
+}
