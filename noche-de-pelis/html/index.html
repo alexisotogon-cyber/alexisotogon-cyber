@@ -4,108 +4,145 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Noche de Pelis</title>
-<meta name="description" content="Busca tus películas, marca tus plataformas y tu horario, y deja que la suerte arme la función de esta noche.">
+<meta name="description" content="Tú pones las pelis, la suerte pone la función. Busca tus películas, marca tus plataformas y tu horario, y arma tu noche.">
 <meta property="og:title" content="Noche de Pelis">
-<meta property="og:description" content="Busca tus películas, marca tus plataformas y tu horario, y deja que la suerte arme la función de esta noche.">
+<meta property="og:description" content="Tú pones las pelis, la suerte pone la función.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0f0618">
+<meta name="theme-color" content="#08090b">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://image.tmdb.org">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&display=swap">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="marquee">
-    <div class="bulbs top" aria-hidden="true"></div>
-    <div class="hero">
-      <figure class="frame left"><img src="img/foto-1.jpg" alt="Foto del proyecto" width="300" height="400"></figure>
-      <div class="hero-text">
-        <p class="eyebrow">Función privada · sala de tu casa</p>
-        <h1>Noche de Pelis</h1>
-        <p class="lead">Busca las pelis que te laten, marca dónde puedes verlas y a qué hora arranca la función. La taquilla arma tu cartelera al azar con las que sí alcanzan a caber.</p>
-      </div>
-      <figure class="frame right"><img src="img/foto-2.jpg" alt="Foto del proyecto" width="300" height="400"></figure>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- PORTADA -->
+<header class="hero" id="top">
+  <div class="hero-bg" id="heroBg" aria-hidden="true"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <nav class="topbar">
+    <span class="brand">Noche de Pelis</span>
+    <a class="ticket-btn" href="#acto-1">Taquilla</a>
+  </nav>
+  <div class="hero-in">
+    <div class="credits" id="credits">
+      <figure class="credit-photo"><img src="img/foto-1.jpg" alt="Foto 1 del proyecto" width="120" height="160"></figure>
+      <figure class="credit-photo"><img src="img/foto-2.jpg" alt="Foto 2 del proyecto" width="120" height="160"></figure>
+      <span class="credit-txt">presentan</span>
     </div>
-    <div class="bulbs bot" aria-hidden="true"></div>
-  </header>
+    <h1 class="hero-title">Noche<br>de Pelis</h1>
+    <p class="hero-quote">“Tú pones las pelis. La suerte pone la función.”</p>
+    <p class="hero-meta"><span>De 2 a 20 películas</span><span>Tus plataformas</span><span>Tu horario</span></p>
+    <a class="cta" href="#acto-1">Elegir mis pelis</a>
+  </div>
+  <p class="now-showing" id="nowShowing" hidden></p>
+</header>
 
-  <main class="grid">
-    <div class="col">
-      <section class="card" aria-labelledby="h-cartelera">
-        <span class="tag">¡Taquilla!</span>
-        <h2 id="h-cartelera">Tu lista de pelis</h2>
-        <p class="hint">Busca por nombre y elige la correcta. Mínimo 2, máximo 20.</p>
-        <div class="search" id="search">
-          <input type="search" id="q" placeholder="Ej. Top Gun Maverick" autocomplete="off" maxlength="80"
-                 role="combobox" aria-expanded="false" aria-controls="results" aria-autocomplete="list" aria-label="Buscar película">
-          <ul class="results" id="results" role="listbox" hidden></ul>
-        </div>
-        <div class="counter"><span><b id="count">0</b> / 20 películas</span><button class="btn ghost sm" type="button" id="clearBtn">Vaciar</button></div>
-        <div class="list" id="list"></div>
-      </section>
+<main>
+  <!-- ACTO I -->
+  <section class="act" id="acto-1" aria-labelledby="h1a">
+    <div class="act-head">
+      <span class="act-no">Acto I</span>
+      <h2 id="h1a">Elige tus pelis</h2>
+      <p class="act-sub">Busca por nombre y abre la ficha para entrar a la peli. Mínimo 2, máximo 20.</p>
+    </div>
+    <div class="search" id="search">
+      <span class="search-ic" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </span>
+      <input type="search" id="q" placeholder="Busca una película…" autocomplete="off" maxlength="80"
+             role="combobox" aria-expanded="false" aria-controls="results" aria-autocomplete="list" aria-label="Buscar película">
+      <ul class="results" id="results" role="listbox" hidden></ul>
+    </div>
+    <div class="rail-head">
+      <p class="tally"><b id="count">00</b><span>/ 20 en tu cartelera</span></p>
+      <button class="link-btn" type="button" id="clearBtn">Vaciar lista</button>
+    </div>
+    <div class="posters" id="list"></div>
+  </section>
 
-      <section class="card" aria-labelledby="h-plat">
-        <span class="tag">En cartelera</span>
-        <h2 id="h-plat">¿Dónde puedes verlas?</h2>
-        <div class="row">
-          <div class="field">
-            <label for="country">País</label>
+  <!-- ACTO II -->
+  <section class="act" id="acto-2" aria-labelledby="h2a">
+    <div class="act-head">
+      <span class="act-no">Acto II</span>
+      <h2 id="h2a">Dónde y cuándo</h2>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <div class="panel-row">
+          <h3>Tus plataformas</h3>
+          <label class="country"><span class="sr">País</span>
             <select id="country">
               <option value="MX">México</option><option value="AR">Argentina</option><option value="CL">Chile</option>
               <option value="CO">Colombia</option><option value="PE">Perú</option><option value="ES">España</option>
               <option value="US">Estados Unidos</option>
             </select>
-          </div>
+          </label>
         </div>
-        <p class="hint" style="margin-top:12px">Marca las plataformas que ya tienes contratadas.</p>
+        <p class="note">Marca las que ya tienes contratadas.</p>
         <div class="chips" id="platChips" role="group" aria-label="Plataformas"></div>
-        <button class="btn ghost sm" type="button" id="morePlats" hidden>Ver todas</button>
-        <span class="lbl" style="margin-top:16px">Costo extra</span>
+        <button class="link-btn" type="button" id="morePlats" hidden>Ver todas</button>
+        <h3 class="mt">¿Pagarías extra?</h3>
         <div class="seg" role="group" aria-label="Costo extra">
-          <button type="button" id="freeBtn" aria-pressed="true">Solo incluidas<small>Sin pagar nada aparte</small></button>
+          <button type="button" id="freeBtn" aria-pressed="true">Solo incluidas<small>Nada aparte de tu suscripción</small></button>
           <button type="button" id="paidBtn" aria-pressed="false">También renta o compra<small>Puede costar extra</small></button>
         </div>
-      </section>
+      </div>
 
-      <section class="card" aria-labelledby="h-horario">
-        <span class="tag">Horario</span>
-        <h2 id="h-horario">¿A qué hora es la función?</h2>
-        <p class="hint">Esto solo decide cuántas pelis caben, no cuáles.</p>
-        <div class="row">
-          <div class="field"><label for="start">Empieza</label><input type="time" id="start" value="19:30"></div>
-          <div class="field"><label for="end">Termina</label><input type="time" id="end" value="01:00"></div>
-          <div class="field"><label for="breakMin">Intermedio</label>
-            <select id="breakMin"><option value="0">Sin pausa</option><option value="10" selected>10 min</option><option value="15">15 min</option><option value="20">20 min</option><option value="30">30 min</option></select>
-          </div>
+      <div class="panel stub">
+        <h3>Horario de la función</h3>
+        <p class="note">Solo decide cuántas pelis caben, no cuáles.</p>
+        <div class="times-in">
+          <label class="tin"><span>Empieza</span><input type="time" id="start" value="19:30"></label>
+          <span class="arrow" aria-hidden="true">→</span>
+          <label class="tin"><span>Termina</span><input type="time" id="end" value="01:00"></label>
         </div>
+        <label class="brk"><span>Intermedio entre pelis</span>
+          <select id="breakMin"><option value="0">Sin pausa</option><option value="10" selected>10 min</option><option value="15">15 min</option><option value="20">20 min</option><option value="30">30 min</option></select>
+        </label>
         <p class="window" id="windowTxt"></p>
-      </section>
-
-      <button class="btn big" type="button" id="goBtn">Armar mi función</button>
+        <div class="perf" aria-hidden="true"></div>
+        <p class="admit">Admite · Toda la sala</p>
+      </div>
     </div>
+    <button class="go" type="button" id="goBtn">Que empiece la función</button>
+    <p class="status" id="status" role="status"></p>
+  </section>
 
-    <div class="col">
-      <section class="screen" aria-labelledby="h-funcion" aria-live="polite">
-        <span class="tag">¡Estreno!</span>
-        <h2 id="h-funcion" class="screen-title">Tu función de hoy</h2>
-        <p class="status" id="status"></p>
-        <div id="result">
-          <div class="placeholder">
-            <div class="seats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-            Agrega tus pelis, marca tus plataformas y presiona <b>Armar mi función</b>. Sorteamos cuáles ven esta noche y a qué hora empieza cada una.
-          </div>
-        </div>
-      </section>
+  <!-- ACTO III -->
+  <section class="act" id="acto-3" aria-labelledby="h3a" hidden>
+    <div class="act-head">
+      <span class="act-no">Acto III</span>
+      <h2 id="h3a">Tu función de hoy</h2>
     </div>
-  </main>
+    <div id="result"></div>
+  </section>
+</main>
 
-  <footer class="foot">
-    <p>Este producto usa la API de TMDB, pero no está respaldado ni certificado por TMDB. Datos de plataformas por JustWatch. El catálogo cambia seguido; confirma en la app antes de dar play.</p>
-  </footer>
+<footer class="foot">
+  <p>Este producto usa la API de TMDB, pero no está respaldado ni certificado por TMDB. Datos de plataformas por JustWatch. El catálogo cambia seguido; confirma en la app antes de dar play.</p>
+</footer>
+
+<!-- FICHA INMERSIVA -->
+<div class="fx" id="fx" role="dialog" aria-modal="true" aria-labelledby="fxTitle" hidden>
+  <div class="fx-bg" id="fxBg" aria-hidden="true"></div>
+  <div class="fx-shade" aria-hidden="true"></div>
+  <div class="bar top" aria-hidden="true"></div>
+  <div class="bar bot" aria-hidden="true"></div>
+  <button class="fx-close" type="button" id="fxClose" aria-label="Cerrar ficha">✕</button>
+  <div class="fx-scroll" id="fxScroll">
+    <div class="fx-in" id="fxIn"></div>
+  </div>
 </div>
+
+<!-- CUENTA REGRESIVA -->
+<div class="leader" id="leader" hidden aria-hidden="true">
+  <div class="leader-ring"><span class="sweep"></span><b id="leaderNo">3</b></div>
+</div>
+
 <script src="js/app.js" defer></script>
 </body>
 </html>
