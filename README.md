@@ -1,118 +1,63 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&duration=2800&pause=1000&color=1DB954&center=true&vCenter=true&width=650&lines=El+talento+no+tiene+c%C3%B3digo+postal" alt="Typing SVG" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img src="assets/hero-light.svg" alt="Alexis Soto, FinOps y Cloud Engineer. Diagrama animado: facturas de AWS, GCP y Azure pasan por un motor FinOps que reduce hasta 45% el costo y alimenta Terraform y Kubernetes." width="100%">
+</picture>
 
-# FinOps & Cloud Engineer | I cut cloud costs and automate cloud governance
-
-### AWS · GCP · Azure | Founder @NodoBravo — cloud & AI training
-
-![Profile Views](https://komarev.com/ghpvc/?username=alexisotogon-cyber&color=1DB954&style=flat-square&label=Visitas+al+perfil)
-
-</div>
-
----
-
-### 🧭 Sobre mí
-
-Engineer specialized in FinOps and multi-cloud architecture. I help companies
-take control of their AWS, GCP, and Azure spend without sacrificing
-scalability or performance.
-
-Over 8+ years, including experience in the financial sector, I've led:
-
-- 💰 Cloud cost reductions of up to **45%** through FinOps strategies across multi-cloud environments (AWS, GCP, Azure)
-- 🏗️ Cost governance and scalable architecture, balancing performance, resilience, and budget
-- ⚙️ Infrastructure automation with Terraform and IaC, cutting manual errors and speeding up deployments by **40%**
-- 🤖 GenAI integration (Amazon Bedrock, prompt engineering, RAG) into operational and business processes
-
----
-
-### 🎤 Speaker
-
-- **AWS Summit 2026** — FinOps para cargas de IA
-- **AWS Summit 2025** — Migración a la nube
-
----
-
-### 🏢 NodoBravo
-
-Fundador de [NodoBravo](https://nodobravo.mx), consultora FinOps y cloud en LATAM,
-con dos frentes:
-
-**Servicios profesionales**
-- Migración cloud
-- FinOps gestionado (auditoría de costos, gobierno de gasto, Savings Plans / Reserved Instances)
-- Automatización con IA, incluyendo sistemas RAG sobre documentación técnica
-
-**Formación**
-- Cloud Launchpad
-- FinOps en Acción
-- IA Sin Límites
-
----
-
-### 🛠️ Stack
-
-**☁️ Cloud & DevOps**
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=aws,gcp,azure,terraform,kubernetes,docker,linux&theme=dark" />
-</p>
-
-**💻 Lenguajes**
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=java,php,py,ts,html,css&theme=dark" />
-</p>
-
-**🖥️ Frameworks**
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=spring,laravel&theme=dark" />
-</p>
-
-**🗄️ Bases de datos**
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase&theme=dark" />
-</p>
-
-**⚙️ Otras herramientas**
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,gitlab,vscode,vim&theme=dark" />
-</p>
-
-**Metodologías y frameworks propios**
-
-![SAFe](https://img.shields.io/badge/SAFe-181717?style=for-the-badge)
-![ITIL](https://img.shields.io/badge/ITIL-004B87?style=for-the-badge)
-![FinOps](https://img.shields.io/badge/FinOps-1DB954?style=for-the-badge)
-![FOCUS](https://img.shields.io/badge/FOCUS-181717?style=for-the-badge)
-
-**AWS**
-
-![EC2](https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
-![S3](https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
-![CloudFormation](https://img.shields.io/badge/CloudFormation-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SageMaker](https://img.shields.io/badge/SageMaker-01A88D?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Bedrock](https://img.shields.io/badge/Bedrock-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-**Automatización e IA**
-
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=claude&logoColor=white)
-
-**Sistemas operativos**
-
-![Windows Server](https://img.shields.io/badge/Windows%20Server-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-
----
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexisso)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alexisotogon-cyber)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/NodoBravo/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/nodobravo)
-
-[![Sitio personal](https://img.shields.io/badge/Alexis%20Soto-1DB954?style=for-the-badge&logo=googlechrome&logoColor=white)](https://alexissoto.nodobravo.mx/)
-[![NodoBravo](https://img.shields.io/badge/NodoBravo-181717?style=for-the-badge&logo=googlechrome&logoColor=white)](https://nodobravo.mx/)
+**[LinkedIn](https://www.linkedin.com/in/alexisso/)** &nbsp;·&nbsp; **[nodobravo.mx](https://nodobravo.mx)** &nbsp;·&nbsp; **[NodoBravo en GitHub](https://github.com/NODOBRAVO)** &nbsp;·&nbsp; Jalisco, México
 
 </div>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <img src="assets/stats-light.svg" alt="Hasta 45% de reducción de costo cloud, hasta 40% de despliegues más rápidos y más de 8 años liderando equipos y transformación tecnológica." width="100%">
+</picture>
+
+## Qué hago
+
+Soy líder de tecnología especializado en FinOps, infraestructura y arquitectura multicloud. Ayudo a las organizaciones a **controlar su inversión en AWS, Google Cloud y Azure** mientras construyen plataformas escalables, resilientes y alineadas con los objetivos del negocio.
+
+| Lo que resuelvo | Cómo lo hago |
+|---|---|
+| **Controlo el gasto cloud** | Estrategias FinOps, gobierno financiero y optimización de recursos: reducciones de costo de hasta 45%. |
+| **Diseño arquitectura y gobierno multicloud** | Modelos que equilibran costo, rendimiento, seguridad y escalabilidad. |
+| **Automatizo la infraestructura** | DevOps y Platform Engineering con Terraform, CloudFormation, Kubernetes y CI/CD: menos errores manuales y despliegues hasta 40% más rápidos. |
+| **Llevo IA generativa a la operación** | Soluciones con Amazon Bedrock y AWS SageMaker para optimizar procesos operativos y de negocio, incluidos sistemas RAG sobre documentación técnica. |
+| **Formo y acompaño equipos técnicos** | Liderazgo de equipos con cultura de colaboración, responsabilidad y mejora continua. |
+
+## NodoBravo
+
+Soy **Founder & Community Lead de [NodoBravo](https://nodobravo.mx)**, una iniciativa que conecta talento tecnológico con formación, comunidad y oportunidades profesionales, y consultora de FinOps y cloud en LATAM.
+
+| Servicios profesionales | Formación |
+|---|---|
+| **Migración cloud** | **Cloud Launchpad** |
+| **FinOps gestionado**: auditoría de costos, gobierno del gasto, Savings Plans y Reserved Instances | **FinOps en Acción** |
+| **Automatización con IA** | **IA Sin Límites** |
+
+## Lo que comparto
+
+Escribo en [LinkedIn](https://www.linkedin.com/in/alexisso/) sobre cloud, FinOps, automatización e inteligencia artificial aplicada a empresas. Entre lo que más comparto: rutas de certificación y aprendizaje gratuito (AWS, Anthropic, Google Cloud, Oracle) y lo que aprendo en eventos como el Google Cloud Summit México.
+
+## Proyectos destacados
+
+| Proyecto | Qué hace |
+|---|---|
+| [**Nimbus Explorer**](https://github.com/NODOBRAVO/nimbus-explorer) | Convierte facturas de AWS, Azure, Google Cloud y FOCUS en decisiones FinOps auditables. El motor calcula; Atlas, sobre Amazon Bedrock, explica y prioriza sin inventar cifras. Construido con Kiro para el Hackathon AWS de Código Facilito. |
+| [**Atlas ciudadano**](https://github.com/NODOBRAVO/atlas-ciudadano) | Sitio interactivo para explorar la participación ciudadana en las elecciones federales de México de 2009 a 2024, por estado, municipio, sexo y edad. Hecho por el equipo Pixel Ciudadano para el hackathon del INE 2026. |
+
+## Stack
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
+  <img src="assets/stack-light.svg" alt="Nube y DevOps: AWS, GCP, Azure, Terraform, Kubernetes, Docker, Linux, Git, GitHub. Desarrollo y datos: Python, TypeScript, Java, PHP, Spring, Laravel, MySQL, MongoDB, Firebase." width="100%">
+</picture>
+
+## Hablemos
+
+¿Tu organización busca **optimizar su operación cloud, fortalecer sus equipos o convertir la infraestructura en una ventaja para el negocio**? Conversemos por [LinkedIn](https://www.linkedin.com/in/alexisso/) o desde [nodobravo.mx](https://nodobravo.mx).
+
+<sub>Logos: [simple-icons](https://simpleicons.org) (CC0). Las marcas pertenecen a sus respectivos dueños.</sub>

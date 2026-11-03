@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="t d"><title id="t">Resultados</title><desc id="d">Hasta 45% de reducción de costo cloud, hasta 40% de despliegues más rápidos y más de 8 años liderando equipos y transformación tecnológica.</desc><style>
+    .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .u{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:f 1.2s cubic-bezier(.22,1,.36,1) forwards} @keyframes f{to{transform:scaleX(1)}}
+    .c{opacity:0;animation:in .8s ease-out forwards} @keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}</style><line x1="0" y1="1" x2="1200" y2="1" stroke="#26332e"/><line x1="0" y1="149" x2="1200" y2="149" stroke="#26332e"/><g class="c" style="animation-delay:0.0s">
+          <text x="4" y="30" class="mono" font-size="11" fill="#3ddc84" letter-spacing="1.6">HASTA</text>
+          <text x="2" y="82" class="sans" font-size="62" font-weight="800" fill="#eef3f0" letter-spacing="-2">45%</text>
+          <rect class="u" style="animation-delay:0.3s" x="2" y="94" width="44" height="4" rx="2" fill="#3ddc84"/>
+          <text x="2" y="120" class="sans" font-size="16" font-weight="600" fill="#eef3f0">Reducción de costo cloud</text>
+          <text x="2" y="138" class="mono" font-size="11" fill="#8fa09a" letter-spacing="1.2">FINOPS Y GOBIERNO FINANCIERO</text></g><line x1="400" y1="22" x2="400" y2="128" stroke="#26332e"/><g class="c" style="animation-delay:0.2s">
+          <text x="436" y="30" class="mono" font-size="11" fill="#3ddc84" letter-spacing="1.6">HASTA</text>
+          <text x="434" y="82" class="sans" font-size="62" font-weight="800" fill="#eef3f0" letter-spacing="-2">40%</text>
+          <rect class="u" style="animation-delay:0.5s" x="434" y="94" width="44" height="4" rx="2" fill="#3ddc84"/>
+          <text x="434" y="120" class="sans" font-size="16" font-weight="600" fill="#eef3f0">Despliegues más rápidos</text>
+          <text x="434" y="138" class="mono" font-size="11" fill="#8fa09a" letter-spacing="1.2">TERRAFORM E IAC</text></g><line x1="800" y1="22" x2="800" y2="128" stroke="#26332e"/><g class="c" style="animation-delay:0.4s">
+          <text x="836" y="30" class="mono" font-size="11" fill="#3ddc84" letter-spacing="1.6">MÁS DE</text>
+          <text x="834" y="82" class="sans" font-size="62" font-weight="800" fill="#eef3f0" letter-spacing="-2">8+</text>
+          <rect class="u" style="animation-delay:0.7s" x="834" y="94" width="44" height="4" rx="2" fill="#3ddc84"/>
+          <text x="834" y="120" class="sans" font-size="16" font-weight="600" fill="#eef3f0">Años liderando equipos y transformación</text>
+          <text x="834" y="138" class="mono" font-size="11" fill="#8fa09a" letter-spacing="1.2">ESTRATEGIA Y EJECUCIÓN</text></g></svg>
